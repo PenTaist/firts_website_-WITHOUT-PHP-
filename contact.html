@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title class="contact">Nous contacter</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="contact.html">Contact</a>
+        <a href="menu.html">Menu</a>
+        <a href="index.html">Acceuil</a>
+        <h1>Nous contacter</h1>
+    </nav>
+        <h1 class="contact">Nous contacter</h1>
+        <form action="contact.html">
+            <fieldset class="fieldset-contact">
+                <div>
+                    <label for="sexe-homme"></label>
+                    <label for="sexe-femme"></label>
+                    <input id="sexe-homme" name="sexe" type="radio" autocomplete="sex" required>M.
+                    <input id="sexe-femme" name="sexe" type="radio" autocomplete="sex" required>Mme.
+                </div>
+                <br>
+                <div>
+                    <label for="fistname">Prénom : </label>
+                    <input id="fistname" type="text" autocomplete="name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="lastname">Nom : </label>
+                    <input id="lastname" type="text" autocomplete="family-name" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Adresse Mail : </label>
+                    <input id="email" placeholder="exemple@gmail.com" type="email" autocomplete="email" required>
+                </div>
+                <br>
+                <div>
+                    <label for="phone">Téléphone : </label>
+                    <input id="phone" placeholder="06 xx xx xx xx" type="text" autocomplete="tel" required>
+                </div>
+                <br>
+                <div>
+                    <label for="comment"></label>
+                    <textarea placeholder="Votre message..." id="comment" cols="70" rows="10" required></textarea>
+                </div>
+                <br>
+                <div>
+                    <label for="conditions"></label>
+                    <input id="conditions" type="checkbox" required>J'ai lu et j'accepte les conditions générales
+                </div>
+                <br>
+                <div>
+                    <label for="receve-news"></label>
+                    <input id="receve-news" type="checkbox">Je souhaite reçevoir par mail les news du restaurant
+                </div>
+                <br>
+                <label for="submit"></label>
+                <label for="reset"></label>
+                <button class="button-contact" id="submit" type="submit">Envoyer</button>
+                <button class="button-contact" id="reset" type="reset">Effacer</button>
+            </fieldset>
+    </form>
+    <footer>
+        <img class="footer-img" src="img/logo.jpg" alt="logo">
+        <div class="footer-text">
+            <p><strong>contact@vito-restaurants.fr</strong></p>
+            <p><strong>02 54 74 93 72</strong></p>
+            <p>©Chez VITO - Restaurants</p>
+            <br>
+        </div>
+    </footer>
+</body>
+</html>
